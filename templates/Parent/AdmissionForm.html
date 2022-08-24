@@ -35,6 +35,7 @@
     </div>
 
     <div class="page-container">
+        <!--Header-->
         <div class="page-header">
 
             <nav class="navbar navbar-expand-lg d-flex justify-content-between">
@@ -71,7 +72,8 @@
             </nav>
 
         </div>
-
+        <!--End Header-->
+        <!--Sidebar-->
         <div class="page-sidebar">
             <ul class="list-unstyled accordion-menu">
                 <li class="sidebar-title">
@@ -108,69 +110,23 @@
 
             </ul>
         </div>
-
-
-
+        <!--End Sidebar-->
         <div class="page-content">
             <div class="main-wrapper">
-
+                <!--Row-->
                 <div class="row">
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">ADMISSION FORM</h5>
-
-
-
                                 <div style="margin: 0 auto;">
-
-                                    <!-- <h1 class="text-center fw-bold mb-3">Welcome to Online Admissions</h1>
-                                        <h4 class="text-center text-black-50">Introducing Online Admissions – Quicker,
-                                            Easier, and Completely Online!
-                                            Complete your
-                                            Child’s School
-                                            Application while staying safe and secure at home!</h4>
-
-                                        <div class="p-3 my-4 rounded text-light"
-                                            style="background-color: var(--bs-primary)">
-                                            <h3>ONLINE CONVERSION</h3>
-                                        </div> -->
-
+                                    <!--Form Start-->
                                     <form class="row g-3">
-                                        <!-- Progress bar 
-                                        <div class="progressbar">
-                                            <div class="progress" id="progress"></div>
 
-                                            <div class="progress-step progress-step-active" data-title="Enrollment">
-                                            </div>
-                                            <div class="progress-step" data-title="Parent Details"></div>
-                                            <div class="progress-step" data-title="Student Details"></div>
-                                            <div class="progress-step" data-title="Contact Details"></div>
-                                        </div>
-                                        -->
-
-                                        <!-- Steps -->
+                                        <!-- Step First -->
                                         <div class="form-step form-step-active">
-
+                                            <!--Row Start-->
                                             <div class="row g-2">
-                                                <!--Row Start-->
-                                                <!-- <div class="col-md-6 mb-3">
-                                                    <label>Are you from? <span class="required">*</span></label>
-                                                    <br>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                        <label class="form-check-label" for="inlineRadio1">Little
-                                                            Aryans</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                        <label class="form-check-label"
-                                                            for="inlineRadio2">Others</label>
-                                                    </div>
-                                                </div> -->
-
 
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
@@ -180,7 +136,6 @@
                                                             <option>Little Aryans</option>
                                                             <option>Other</option>
                                                         </select>
-
                                                     </div>
                                                 </div>
 
@@ -193,9 +148,7 @@
                                                             <option>9911</option>
                                                             <option>9910</option>
                                                             <option>9909</option>
-
                                                         </select>
-
                                                     </div>
                                                 </div>
 
@@ -239,212 +192,293 @@
                                                         class="btn btn-next btn-outline-primary">Next</button>
                                                 </div>
 
-
-                                                <!--Row End-->
                                             </div>
-                                            <!--Step End-->
+                                            <!--Row End-->
                                         </div>
+                                        <!--Step End-->
 
-                                        <!-- Step -->
-
+                                        <!-- Step Second -->
                                         <div class="form-step">
-
-                                            <div>
-                                                Para
-                                            </div>
-
-
-                                            <div class="d-grid gap-2 d-flex justify-content-between">
-                                                <button type="button" class="btn btn-outline-secondary">SAVE</button>
+                                            <!--Row Start-->
+                                            <div class="row g-2">
                                                 <div>
+                                                    Para
+                                                </div>
+
+                                                <div class="d-grid gap-2 d-flex justify-content-between">
                                                     <button type="button"
-                                                        class="btn btn-prev btn-outline-primary">Back</button>
-                                                    <button type="button"
-                                                        class="btn btn-next btn-outline-primary">Next</button>
+                                                        class="btn btn-outline-secondary">SAVE</button>
+                                                    <div>
+                                                        <button type="button"
+                                                            class="btn btn-prev btn-outline-primary">Back</button>
+                                                        <button type="button"
+                                                            class="btn btn-next btn-outline-primary">Next</button>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <!--Row End-->
                                         </div>
-
                                         <!-- Step End -->
 
-                                        <!-- Step -->
-
+                                        <!-- Step Third -->
                                         <div class="form-step">
+                                            <!--Row Start-->
+                                            <div class="row g-2">
 
-                                            <div>
                                                 <p class="bold">Student Details</p>
                                                 <p>Session: Auto Fill</p>
                                                 <p>Grade: Auto Fill</p>
 
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Applicant's Photo<span
+                                                            class="required">*</span></label>
+                                                    <input class="form-control" type="file" id="formFile"
+                                                        accept=".jpg,.png,.jpeg" />
+                                                    <div class="form-text">
+                                                        File Size Should be less than 2Mb. The Image formats should
+                                                        be
+                                                        .jpg or .jpeg.
+                                                    </div>
+                                                </div>
+
+                                                <label>Applicant's Name <span class="required">*</span></label>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <input type="text" class="form-control" placeholder="First Name" />
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Middle Name" />
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Last Name" />
+                                                </div>
 
 
 
 
-                                                <div class="row g-2">
-                                                    <!--Row Start-->
-
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label">Applicant's Photo<span
+                                                        <label>Applicant's Gender <span
+                                                                class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                            <option>Transgender</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Date of
+                                                            Birth<span class="required">*</span></label>
+                                                        <input class="form-control" type="date" min="2003-01-01"
+                                                            max="2020-12-31" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Place of Birth<span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Original Birth
+                                                            Certificate
+                                                            with date of birth, child and parent’s name<span
                                                                 class="required">*</span></label>
                                                         <input class="form-control" type="file" id="formFile"
                                                             accept=".jpg,.png,.jpeg" />
                                                         <div class="form-text">
-                                                            File Size Should be less than 2Mb. The Image formats should
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
+                                                            be
+                                                            .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Religion <span class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option value="Hinduism">Hinduism</option>
+                                                            <option value="Islam">Islam</option>
+                                                            <option value="Christianity">Christianity</option>
+                                                            <option value="Sikhism">Sikhism</option>
+                                                            <option value="Buddhism">Buddhism</option>
+                                                            <option value="Jainism">Jainism</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Caste <span class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option value="GERNERAL">GERNERAL</option>
+                                                            <option value="OBC">OBC</option>
+                                                            <option value="SBC">SBC</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="ST">ST</option>
+                                                            <option value="VSNT">VSNT</option>
+                                                            <option value="Others">Others</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Please select a Caste
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Sub-Cast (If Applicable)<span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Caste
+                                                            Certificate<span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
                                                             be
                                                             .jpg or .jpeg.
                                                         </div>
                                                     </div>
 
-                                                    <label>Applicant's Name <span class="required">*</span></label>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3"><input type="text" class="form-control"
-                                                                placeholder="First Name" /></div>
-
-                                                    </div>
-                                                    <div class="col-md-4"><input type="text" class="form-control"
-                                                            placeholder="Middle Name" /></div>
-                                                    <div class="col-md-4"><input type="text" class="form-control"
-                                                            placeholder="Last Name" /></div>
-
-
-
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Applicant's Gender <span
-                                                                    class="required">*</span></label>
-                                                            <select class="form-select">
-                                                                <option selected disabled value="">-select-</option>
-                                                                <option>Male</option>
-                                                                <option>Female</option>
-                                                                <option>Transgender</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Date of
-                                                                Birth<span class="required">*</span></label>
-                                                            <input class="form-control" type="date" min="2003-01-01"
-                                                                max="2020-12-31" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Place of Birth<span class="required">*</span></label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Place of Birth" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-12">
-                                                        <div class="mb-3">
-                                                            <label for="formFile" class="form-label">Original Birth
-                                                                Certificate
-                                                                with date of birth, child and parent’s name<span
-                                                                    class="required">*</span></label>
-                                                            <input class="form-control" type="file" id="formFile"
-                                                                accept=".jpg,.png,.jpeg" />
-                                                            <div class="form-text">
-                                                                File Size Should be less than 2Mb. The Image formats
-                                                                should
-                                                                be
-                                                                .jpg or .jpeg.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Religion <span class="required">*</span></label>
-                                                            <select class="form-select">
-                                                                <option selected disabled value="">-select-</option>
-                                                                <option value="Hinduism">Hinduism</option>
-                                                                <option value="Islam">Islam</option>
-                                                                <option value="Christianity">Christianity</option>
-                                                                <option value="Sikhism">Sikhism</option>
-                                                                <option value="Buddhism">Buddhism</option>
-                                                                <option value="Jainism">Jainism</option>
-                                                                <option value="Others">Others</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Caste <span class="required">*</span></label>
-                                                            <select class="form-select">
-                                                                <option selected disabled value="">-select-</option>
-                                                                <option value="GERNERAL">GERNERAL</option>
-                                                                <option value="OBC">OBC</option>
-                                                                <option value="SBC">SBC</option>
-                                                                <option value="SC">SC</option>
-                                                                <option value="ST">ST</option>
-                                                                <option value="VSNT">VSNT</option>
-                                                                <option value="Others">Others</option>
-                                                            </select>
-                                                            <div class="invalid-feedback">Please select a Caste
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label>Sub-Cast (If Applicable)<span
-                                                                    class="required">*</span></label>
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Place of Birth" />
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-md-12">
-                                                        <div class="mb-3">
-                                                            <label for="formFile" class="form-label">Caste
-                                                                Certificate<span class="required">*</span></label>
-                                                            <input class="form-control" type="file" id="formFile"
-                                                                accept=".jpg,.png,.jpeg" />
-                                                            <div class="form-text">
-                                                                File Size Should be less than 2Mb. The Image formats
-                                                                should
-                                                                be
-                                                                .jpg or .jpeg.
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="col-md-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                id="flexCheckDefault">
-                                                            <label class="form-check-label" for="flexCheckDefault">
-                                                                <p><span class="bold">Read and Agree</span> <span
-                                                                        class="required">*</span><br>
-                                                                    In case of unavailability of child's caste
-                                                                    certificate you can upload any one of the parent's
-                                                                    certificate as a proof of caste. Caste certificate
-                                                                    is required for registration for national
-                                                                    scholarship examination and board examination.
-                                                                    Parents are requested to apply for their ward's
-                                                                    certificate and update the information timely, with
-                                                                    the school records at the admissions office.</p>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Row End -->
                                                 </div>
 
+                                                <div class="col-md-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            <p><span class="bold">Read and Agree</span> <span
+                                                                    class="required">*</span><br>
+                                                                In case of unavailability of child's caste
+                                                                certificate you can upload any one of the parent's
+                                                                certificate as a proof of caste. Caste certificate
+                                                                is required for registration for national
+                                                                scholarship examination and board examination.
+                                                                Parents are requested to apply for their ward's
+                                                                certificate and update the information timely, with
+                                                                the school records at the admissions office.</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Name of the previous school attended<span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>UDISE number of the previous school <span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Applicant's nationality <span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">School Leaving /
+                                                            Transfer Certificates of the previous school</label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
+                                                            be
+                                                            .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Marksheet / Passing
+                                                            Certificate of the previous class attended by your
+                                                            ward <span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
+                                                            be
+                                                            .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Applicant's aadhaar card number
+                                                            <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="1234"
+                                                            pattern="[0-9]+" minlength="12" maxlength="12" />
+                                                        <div class="invalid-feedback">Please enter a aadhaar card
+                                                            no.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Student's aadhaar
+                                                            front<span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
+                                                            be
+                                                            .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Student's aadhaar
+                                                            back<span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should be .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
                                                         <label>Blood Group <span class="required">*</span></label>
                                                         <select class="form-select">
@@ -482,78 +516,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label>House <span class="required">*</span></label>
-                                                        <select class="form-select">
-                                                            <option selected disabled value="">-select-</option>
-                                                            <option value="BHAIRAV (Yellow)">BHAIRAV (Yellow)
-                                                            </option>
-                                                            <option value="HINDOL (Red)">HINDOL (Red)</option>
-                                                            <option value="MALHAR (Green)">MALHAR (Green)
-                                                            </option>
-                                                            <option value="MALKAUNS (Blue)">MALKAUNS (Blue)
-                                                            </option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a house
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-
-                                                        <div class="invalid-feedback">Please select a religion
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label>Presently studying in grade
-                                                            <span class="required">*</span></label>
-                                                        <select class="form-select">
-                                                            <option selected disabled value="">-select-</option>
-                                                            <option value="1st">1st</option>
-                                                            <option value="2nd">2nd</option>
-                                                            <option value="3rd">3rd</option>
-                                                            <option value="4th">4th</option>
-                                                            <option value="5th">5th</option>
-                                                            <option value="6th">6th</option>
-                                                            <option value="7th">7th</option>
-                                                            <option value="8th">8th</option>
-                                                            <option value="9th">9th</option>
-                                                            <option value="11th">11th</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a grade
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label>Presently studying in section
-                                                            <span class="required">*</span></label>
-                                                        <select class="form-select">
-                                                            <option selected disabled value="">-select-</option>
-                                                            <option value="A">A</option>
-                                                            <option value="B">B</option>
-                                                            <option value="C">C</option>
-                                                            <option value="D">D</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a section
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label>Student's aadhaar card number
+                                                        <label>Applicant's mother tongue
                                                             <span class="required">*</span></label>
                                                         <input type="text" class="form-control" placeholder="1234"
                                                             pattern="[0-9]+" minlength="12" maxlength="12" />
@@ -563,31 +528,28 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-6">
+                                                <div class="col-md-4">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label">Student's aadhaar
-                                                            front<span class="required">*</span></label>
-                                                        <input class="form-control" type="file" id="formFile"
-                                                            accept=".jpg,.png,.jpeg" />
-                                                        <div class="form-text">
-                                                            File Size Should be less than 2Mb. The Image formats
-                                                            should
-                                                            be
-                                                            .jpg or .jpeg.
+                                                        <label>Applicant's active passport number
+                                                        </label>
+                                                        <input type="text" class="form-control" placeholder="1234"
+                                                            pattern="[0-9]+" minlength="12" maxlength="12" />
+                                                        <div class="invalid-feedback">Please enter a aadhaar card
+                                                            no.
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                     <div class="mb-3">
-                                                        <label for="formFile" class="form-label">Student's aadhaar
-                                                            back<span class="required">*</span></label>
-                                                        <input class="form-control" type="file" id="formFile"
-                                                            accept=".jpg,.png,.jpeg" />
-                                                        <div class="form-text">
-                                                            File Size Should be less than 2Mb. The Image formats
-                                                            should be .jpg or .jpeg.
-                                                        </div>
+                                                        <label>Is the child adopted?<span
+                                                                class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option>Yes</option>
+                                                            <option>No</option>
+
+                                                        </select>
                                                     </div>
                                                 </div>
 
@@ -601,56 +563,43 @@
                                                             class="btn btn-next btn-outline-primary">Next</button>
                                                     </div>
                                                 </div>
-                                                <!--Row End-->
                                             </div>
-
-
-                                            <div class="d-grid gap-2 d-flex justify-content-between">
-                                                <button type="button" class="btn btn-outline-secondary">SAVE</button>
-                                                <div>
-                                                    <button type="button"
-                                                        class="btn btn-prev btn-outline-primary">Back</button>
-                                                    <button type="button"
-                                                        class="btn btn-next btn-outline-primary">Next</button>
-                                                </div>
-                                            </div>
+                                            <!--Row End-->
                                         </div>
-
                                         <!-- Step End -->
 
-
-
-
-                                        <!-- Step Two Start -->
+                                        <!-- Step Four -->
                                         <div class="form-step">
-
+                                            <!--Row Start-->
                                             <div class="row g-2">
-                                                <!--Row Start-->
-                                                <div class="mb-3">
-                                                    <label>Father's Name <span class="required">*</span></label>
-                                                    <input type="text" class="form-control" placeholder="Full Name"
-                                                        pattern="[a-zA-Z]+" minlength="3" maxlength="50" />
+                                                <div>
+                                                    Para
                                                 </div>
 
-                                                <div class="mb-3">
-                                                    <label for="formFile" class="form-label">Father's Photo<span
-                                                            class="required">*</span></label>
-                                                    <input class="form-control" type="file" id="formFile"
-                                                        accept=".jpg,.png,.jpeg" />
-                                                    <div class="form-text">
-                                                        File Size Should be less than 2Mb. The Image formats should
-                                                        be .jpg or .jpeg.
+                                                <div class="d-grid gap-2 d-flex justify-content-between">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary">SAVE</button>
+                                                    <div>
+                                                        <button type="button"
+                                                            class="btn btn-prev btn-outline-primary">Back</button>
+                                                        <button type="button"
+                                                            class="btn btn-next btn-outline-primary">Next</button>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <!--Row End-->
+                                        </div>
+                                        <!-- Step End -->
 
-                                                <div class="mb-3">
-                                                    <label>Mother's Name <span class="required">*</span></label>
-                                                    <input type="text" class="form-control" placeholder="Full Name"
-                                                        pattern="[a-zA-Z]+" minlength="3" maxlength="50" />
-                                                </div>
+                                        <!-- Step Five -->
+                                        <div class="form-step">
+                                            <!--Row Start-->
+                                            <div class="row g-2">
 
-                                                <div class="mb-3">
-                                                    <label for="formFile" class="form-label">Mother's Photo<span
+                                                <h3>Parents Details</h3>
+
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="formFile" class="form-label">Father's Photo<span
                                                             class="required">*</span></label>
                                                     <input class="form-control" type="file" id="formFile"
                                                         accept=".jpg,.png,.jpeg" />
@@ -661,35 +610,198 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="d-grid gap-2 d-flex justify-content-between">
-                                                    <button type="button"
-                                                        class="btn btn-outline-secondary">SAVE</button>
-                                                    <div>
-                                                        <button type="button"
-                                                            class="btn btn-prev btn-outline-primary">Back</button>
-                                                        <button type="button"
-                                                            class="btn btn-next btn-outline-primary">Next</button>
+                                                <label>Father's Name <span class="required">*</span></label>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <input type="text" class="form-control" placeholder="First Name" />
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Middle Name" />
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <input type="text" class="form-control" placeholder="Last Name" />
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Date of
+                                                            Birth<span class="required">*</span></label>
+                                                        <input class="form-control" type="date" min="2003-01-01"
+                                                            max="2020-12-31" />
                                                     </div>
                                                 </div>
-                                                <!--Row End-->
-                                            </div>
-                                            <!--Step End-->
-                                        </div>
 
-                                        <!-- Step Three Start -->
-                                        <div class="form-step">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label>Education Qualifications<span
+                                                                class="required">*</span></label>
+                                                        <textarea class="form-control" rows="4"></textarea>
+                                                        <div class="form-text">
+                                                            (Please mention institutions & school attended)
+                                                        </div>
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Occupation <span class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option value="Accounts Professional">Accounts
+                                                                Professional</option>
+                                                            <option value="Agriculture (Farmer)">Agriculture
+                                                                (Farmer)</option>
+                                                            <option value="Banking Professional">Banking
+                                                                Professional</option>
+                                                            <option value="Boards">Boards</option>
+                                                            <option value="Business / Self Employed">Business /
+                                                                Self Employed</option>
+                                                            <option value="Central Government Employee">Central
+                                                                Government Employee</option>
+                                                            <option value="Central Public Sector Unit">Central
+                                                                Public Sector Unit</option>
+                                                            <option value="Central University">Central University
+                                                            </option>
+                                                            <option value="Civil Service">Civil Service</option>
+                                                            <option value="Contractual Staff Of Central Government">
+                                                                Contractual
+                                                                Staff Of Central Government</option>
+                                                            <option
+                                                                value="Contractual Staff Of Department of School Education Maharashtra Government">
+                                                                Contractual Staff Of Department of School
+                                                                Education Maharashtra Government</option>
+                                                            <option value="Contractual Staff Of Maharashtra Government">
+                                                                Contractual Staff Of Maharashtra Government
+                                                            </option>
+                                                            <option value="Contractual Staff Of other State Government">
+                                                                Contractual Staff Of other State Government
+                                                            </option>
+                                                            <option value="Corporations">Corporations</option>
+                                                            <option value="Doctor / Medical Professional">Doctor
+                                                                / Medical Professional</option>
+                                                            <option value="Educationist">Educationist</option>
+                                                            <option value="Maharashtra State Government Employee">
+                                                                Maharashtra
+                                                                State Government Employee</option>
+                                                            <option value="Home Maker">Home Maker</option>
+                                                            <option value="Hospitality">Hospitality</option>
+                                                            <option value="IT Professional">IT Professional
+                                                            </option>
+                                                            <option value="Labourer">Labourer</option>
+                                                            <option value="Lawyer / Judiciary">Lawyer / Judiciary
+                                                            </option>
+                                                            <option value="Military Personnel">Military Personnel
+                                                            </option>
+                                                            <option value="NGO / Volunteer">NGO / Volunteer
+                                                            </option>
+                                                            <option value="Other State Government Employee">Other
+                                                                State Government Employee</option>
+                                                            <option value="Paramilitary Personnel">Paramilitary
+                                                                Personnel</option>
+                                                            <option value="Pilot / Aviation Industry">Pilot /
+                                                                Aviation Industry</option>
+                                                            <option value="Politician">Politician</option>
+                                                            <option value="Private Job">Private Job</option>
+                                                            <option value="Private University">Private University
+                                                            </option>
+                                                            <option value="Retired From Service">Retired From
+                                                                Service</option>
+                                                            <option value="Self Employed">Self Employed</option>
+                                                            <option value="State Public Sector Unit">State Public
+                                                                Sector Unit</option>
+                                                            <option value="State University">State University
+                                                            </option>
+                                                            <option value="Unclean Occupation">Unclean Occupation
+                                                            </option>
+                                                            <option value="Unemployed">Unemployed</option>
+                                                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
 
-                                            <!--Step End-->
-                                        </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Designation <span class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+                                                            <option value="A.G.M.">A.G.M.</option>
+                                                            <option value="Agriculture / Farmer">Agriculture / Farmer
+                                                            </option>
+                                                            <option value="Analyst">Analyst</option>
+                                                            <option value="Architect">Architect</option>
+                                                            <option value="Assistant Manager">Assistant Manager</option>
+                                                            <option value="Assistant Vice President">Assistant Vice
+                                                                President</option>
+                                                            <option value="CEO">CEO</option>
+                                                            <option value="Chairman">Chairman</option>
+                                                            <option value="Chartered Accountant">Chartered Accountant
+                                                            </option>
+                                                            <option value="Chef">Chef</option>
+                                                            <option value="Civil Servant (A)">Civil Servant (A)</option>
+                                                            <option value="Civil Servant (B)">Civil Servant (B)</option>
+                                                            <option
+                                                                value="Commisioned Officer (Defense and Paramilitary Forces)">
+                                                                Commisioned Officer (Defense and Paramilitary Forces)
+                                                            </option>
+                                                            <option value="Company Secretary">Company Secretary</option>
+                                                            <option value="Consultant">Consultant</option>
+                                                            <option value="COO / CFO / CIO / CTO">COO / CFO / CIO / CTO
+                                                            </option>
+                                                            <option value="CXO">CXO</option>
+                                                            <option value="D.G.M.">D.G.M.</option>
+                                                            <option value="Director">Director</option>
+                                                            <option value="Doctor">Doctor</option>
+                                                            <option value="Economist">Economist</option>
+                                                            <option value="Editor">Editor</option>
+                                                            <option value="Educator">Educator</option>
+                                                            <option value="Engineer">Engineer</option>
+                                                            <option value="Entrepreneur">Entrepreneur</option>
+                                                            <option value="Family-Owned">Family-Owned</option>
+                                                            <option value="Head">Head</option>
+                                                            <option value="Independent Professional">Independent
+                                                                Professional</option>
+                                                            <option value="Inspector">Inspector</option>
+                                                            <option value="Journalist">Journalist</option>
+                                                            <option value="Judicial Services">Judicial Services</option>
+                                                            <option value="Lawyer">Lawyer</option>
+                                                            <option value="Manager">Manager</option>
+                                                            <option
+                                                                value="Non Commissioned Officer (Military and Paramilitary Forces">
+                                                                Non Commissioned Officer (Military and Paramilitary
+                                                                Forces</option>
+                                                            <option value="Officer">Officer</option>
+                                                            <option value="Others">Others</option>
+                                                            <option value="Partner">Partner</option>
+                                                            <option value="President">President</option>
+                                                            <option value="Professor">Professor</option>
+                                                            <option value="Proprietor">Proprietor</option>
+                                                            <option value="Real Estate Consultant">Real Estate
+                                                                Consultant</option>
+                                                            <option value="Scientist / Researcher">Scientist /
+                                                                Researcher</option>
+                                                            <option value="Senior Advisor">Senior Advisor</option>
+                                                            <option value="Senior Consultant">Senior Consultant</option>
+                                                            <option value="Senior Manager">Senior Manager</option>
+                                                            <option value="Senior Vice President">Senior Vice President
+                                                            </option>
+                                                            <option value="Specialist">Specialist</option>
+                                                            <option value="Vice-President">Vice-President</option>
+                                                            <option value="Vice-Chairman">Vice-Chairman</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
 
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label>Organization where you work<span
+                                                                class="required">*</span></label>
+                                                        <textarea class="form-control" rows="4"></textarea>
+                                                    </div>
+                                                </div>
 
-
-                                        <!-- Step Four Start -->
-                                        <div class="form-step">
-
-                                            <div class="row g-2">
-                                                <!--Row Start-->
+                                                <h5>Office Address <span class="required">*</span></h5>
 
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
@@ -735,38 +847,316 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-12">
                                                     <div class="mb-3">
-                                                        <label>Primary Email<span class="required">*</span></label>
-                                                        <input type="email" class="form-control"
-                                                            placeholder="name@websit.com" />
-                                                        <div class="invalid-feedback">Enter Address Line 1</div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                    <div class="mb-3">
-                                                        <label>Primary Phone Number<span
+                                                        <label>Office Contact No. <span
                                                                 class="required">*</span></label>
-                                                        <input type="Number" class="form-control"
-                                                            placeholder="9876543210" />
+                                                        <input type="number" class="form-control" />
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label>Secondary Email</label>
-                                                        <input type="email" class="form-control"
-                                                            placeholder="name@websit.com" />
-                                                        <div class="invalid-feedback">Enter Address Line 1</div>
+                                                        <label>Email ID <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
                                                     </div>
                                                 </div>
 
-                                                <div class="col-md-3">
+                                                <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label>Secondary Phone Number</label>
-                                                        <input type="Number" class="form-control"
-                                                            placeholder="9876543210" />
+                                                        <label>Mobile Number <span class="required">*</span></label>
+                                                        <input type="number" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Father's aadhaar card number
+                                                            <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="1234"
+                                                            pattern="[0-9]+" minlength="12" maxlength="12" />
+                                                        <div class="invalid-feedback">Please enter a aadhaar card
+                                                            no.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Father's aadhaar
+                                                            front<span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should
+                                                            be
+                                                            .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Father's aadhaar
+                                                            back<span class="required">*</span></label>
+                                                        <input class="form-control" type="file" id="formFile"
+                                                            accept=".jpg,.png,.jpeg" />
+                                                        <div class="form-text">
+                                                            File Size Should be less than 2Mb. The Image formats
+                                                            should be .jpg or .jpeg.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label>Annual family income in rupees<span
+                                                                class="required">*</span></label>
+                                                        <select class="form-select">
+                                                            <option selected disabled value="">-select-</option>
+
+                                                            <option value="Less than ₹ 3,00,000">Less
+                                                                than ₹ 3,00,000</option>
+                                                            <option value="₹ 3,00,000 to  ₹ 5,00,000">₹
+                                                                3,00,000 to ₹ 5,00,000</option>
+                                                            <option value="₹ 5,00,000 to  ₹ 10,00,000">₹
+                                                                5,00,000 to ₹ 10,00,000</option>
+                                                            <option value="₹ 10,00,000 to  ₹ 15,00,000">₹
+                                                                10,00,000 to ₹ 15,00,000</option>
+                                                            <option value="More than  ₹ 15,00,000">
+                                                                More than ₹ 15,00,000</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-grid gap-2 d-flex justify-content-between">
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary">SAVE</button>
+                                                    <div>
+                                                        <button type="button"
+                                                            class="btn btn-prev btn-outline-primary">Back</button>
+                                                        <button type="button"
+                                                            class="btn btn-next btn-outline-primary">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Row End-->
+                                        </div>
+                                        <!-- Step End -->
+
+                                        <!-- Step Six -->
+                                        <div class="form-step">
+                                            <!--Row Start-->
+                                            <div class="row g-2">
+
+                                                <p class="bold">Current residential address <span
+                                                        class="required">*</span></p>
+
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Address Line 1 <span class="required">*</span></label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter address" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Address Line 2</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter address" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>City<span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>State<span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Pincode <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="12345"
+                                                            pattern="[0-9]+" minlength="5" maxlength="5" />
+                                                    </div>
+                                                </div>
+
+                                                <p class="bold">Current residential address proof of either parent <span
+                                                        class="required">*</span></p>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Utility Bill (Water/ Electricity/ Phone etc.)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Sale deed/ lease deed / rent agreement / possession letter
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Bank statement or Passbook
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Passport / Aadhaar card / Driving License
+                                                    </label>
+                                                </div>
+                                                <div class="form-text mb-3">
+                                                    (Any 2 documents from the list given below)
+                                                </div>
+
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label bold">
+                                                        Permanent address same as current address
+                                                    </label>
+                                                </div>
+
+                                                <p class="bold">Permanent residential address <span
+                                                        class="required">*</span></p>
+
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Address Line 1 <span class="required">*</span></label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter address" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label>Address Line 2</label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter address" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>City<span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>State<span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Pincode <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" placeholder="12345"
+                                                            pattern="[0-9]+" minlength="5" maxlength="5" />
+                                                    </div>
+                                                </div>
+
+                                                <p class="bold">Permanent residential address proof of either parent
+                                                    <span class="required">*</span>
+                                                </p>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Utility Bill (Water/ Electricity/ Phone etc.)
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Sale deed/ lease deed / rent agreement / possession letter
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Bank statement or Passbook
+                                                    </label>
+                                                </div>
+
+                                                <div class="form-check col-md-3">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label">
+                                                        Passport / Aadhaar card / Driving License
+                                                    </label>
+                                                </div>
+                                                <div class="form-text mb-3">
+                                                    (Any 2 documents from the list given below)
+                                                </div>
+
+                                                <p class="bold">Emergency Contact Person 1
+                                                    <span class="form-text">Other than Parents</span>
+                                                </p>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Name of person <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Relationship with the child <span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Contact Number<span class="required">*</span></label>
+                                                        <input type="Number" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <p class="bold">Emergency Contact Person 2
+                                                    <span class="form-text">Other than Parents</span>
+                                                </p>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Name of person <span class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Relationship with the child <span
+                                                                class="required">*</span></label>
+                                                        <input type="text" class="form-control" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="mb-3">
+                                                        <label>Contact Number<span class="required">*</span></label>
+                                                        <input type="Number" class="form-control" />
                                                     </div>
                                                 </div>
 
@@ -788,26 +1178,17 @@
 
 
                                 </div>
-
+                                <!--Step End-->
 
                                 </form>
+                                <!--Form End-->
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
+            <!--End Row-->
         </div>
-
-
-
-
-
-
-
-
-
-
     </div>
     </div>
 
