@@ -593,11 +593,13 @@ body.sidebar-hidden
 }
 .page-header .navbar .navbar-brand {
   margin-right: 0;
-  background: url(../images/logo@2x.png) center center no-repeat;
+  background: url(../images/AryaGurukul-Nandivali.png) center center no-repeat;
   background-size: cover;
-  width: 40px;
-  height: 40px;
+  width: 180px;
+  height: 70px;
   margin: 0 auto;
+  position: absolute;
+  top: 0px;
 }
 .page-header #headerNav {
   flex: 10;
