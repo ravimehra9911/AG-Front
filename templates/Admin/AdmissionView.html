@@ -23,6 +23,11 @@
     <link href="../../assets/css/main.min.css" rel="stylesheet">
     <link href="../../assets/css/custom.css" rel="stylesheet">
 
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <style>
         .formview {
             width: 1000px;
@@ -48,7 +53,7 @@
     <div class="page-container">
         <div class="formview">
 
-            <div class="row">
+            <div id="element-to-print" class="row">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
@@ -291,7 +296,7 @@
 
                             <div class="row mb-5">
                                 <div class="col d-flex justify-content-end">
-                                    <button onclick="window.print()" class="btn btn-info">Print</button>
+                                    <button onclick="window.html2pdf(element);" class="btn btn-info">Print</button>
 
                                 </div>
 
@@ -305,6 +310,12 @@
             </div>
         </div>
     </div>
+    <script>
+        var element = document.getElementById('element-to-print');
+
+    </script>
+
+
     <!-- Javascripts -->
     <script src="../../assets/plugins/jquery/jquery-3.4.1.min.js"></script>
     <script src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
