@@ -109,14 +109,9 @@
     </div>
 
     <div class="page-content">
-
       <div class="main-wrapper">
 
-
-
         <div class="row">
-
-
           <div class="col-md-3">
             <div class="card stat-widget">
               <div class="card-body">
@@ -129,10 +124,10 @@
                       </div>
                       <div class="tr-text">
                         <a href="#">
-                          <h4>Caution Money (Paid)</h4>
-                          <p>15/April/2021</p><br>
+                          <h4>Caution Money</h4>
+                          <p>15/May/2023</p><br>
                         </a>
-                        <h3>₹15,000</h3>
+                        <h3>₹25,000</h3>
                       </div>
                     </div>
                   </div>
@@ -143,23 +138,164 @@
                       </div>
                       <div class="tr-text">
                         <a href="#">
-                          <h4>Admission Fee (Paid)</h4>
-                          <p>15/April/2021</p><br>
+                          <h4>Admission Fee</h4>
+                          <p>15/May/2023 <span class="badge bg-warning">payble</span></p><br>
+
                         </a>
-                        <h3>₹1,820</h3>
+                        <h3>₹4,668</h3>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button type="button" class="btn btn-sm btn-outline-success m-b-xs">Paynow</button>
+
+                <script>
+
+                  function trigger() {
+
+                    var boxshow = document.getElementById('cDetail');
+                    boxshow.classList.toggle('slidedown');
+                  }
+
+                </script>
+
+                <style>
+                  .feecard {
+                    overflow: hidden;
+                    width: 100%;
+                  }
+
+                  .slideup .feeDetails {
+                    margin-top: -150%;
+                    transition: margin-top 0.5s ease-in-out;
+
+                  }
+
+                  .slidedown .feeDetails {
+                    margin-top: 0%;
+                  }
+
+                  .seeMoreTriger {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                  }
+                </style>
+
+                <div class="seeMoreTriger">
+                  <p><input class="form-check-input" type="checkbox"> Add</p>
+                  <p onclick="trigger()">see more</p>
+                </div>
+
+                <!-- <div class="feecard">
+                  <div id="cDetail" class="slideup">
+                    <table class="table border feeDetails">
+                      <tr>
+                        <td colspan="2"><b>Details</b></td>
+                      </tr>
+                      <tr>
+                        <td>Total Fee</td>
+                        <td>14004</td>
+                      </tr>
+                      <tr>
+                        <td>Deposite</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Balance</td>
+                        <td>14004</td>
+                      </tr>
+                      <tr>
+                        <td>Late Fee</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Concession</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Due Date</td>
+                        <td>15/05/2023</td>
+                      </tr>
+
+                    </table>
+                  </div>
+
+                </div> -->
               </div>
             </div>
           </div>
 
         </div>
+        <div class="feecard">
+          <div id="cDetail" class="slideup">
+            <div class="row feeDetails">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body" style="overflow-x:auto;">
+                    <div class="table-responsive">
+                      <table class="table">
 
-        <div class="row">
+                        <thead>
+                          <tr>
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="col">#</th>
+                            <th scope="col">Acadmic Year</th>
+                            <th scope="col">Grade</th>
+                            <th scope="col">Fee Title</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Late Fee</th>
+                            <th scope="col">Deposite</th>
+                            <th scope="col">Balance</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
 
+                        <tbody>
+                          <tr>
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="row">1</th>
+                            <td>2022-2023</td>
+                            <td>2nd</td>
+                            <td>Admission Fee</td>
+                            <td><span class="badge bg-warning">payble</span></td>
+                            <td>4668</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>15/05/2023</td>
+                            <td><button class="btn btn-primary">Pay</button></td>
+                          </tr>
+
+                          <tr>
+                            <th scope="col"><input class="form-check-input" type="checkbox"></th>
+                            <th scope="row">2</th>
+                            <td>2022-2023</td>
+                            <td>2nd</td>
+                            <td>Caution Money</td>
+                            <td><span class="badge bg-success">paid</span></td>
+                            <td>25000</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>15/05/2023</td>
+                            <td><button class="btn btn-primary">Pay</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row ">
           <div class="col-lg-3 col-md-4">
             <div class="card stat-widget">
               <div class="card-body">
@@ -264,8 +400,8 @@
             </div>
           </div>
 
-        </div>
 
+        </div>
 
 
 
@@ -274,7 +410,7 @@
 
           <div class="col-md-12 col-lg-12">
             <div class="card table-widget">
-              <div class="card-body">
+              <div class="card-body" style="position: relative;">
                 <h5 class="card-title">Recent Transaction</h5>
                 <div class="table-responsive">
                   <table class="table">
@@ -322,12 +458,28 @@
                     </tbody>
                   </table>
                 </div>
+
+
+
+
               </div>
             </div>
           </div>
 
         </div>
 
+
+
+
+
+        <div style="width: 80%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 40;
+        bottom: 20px;">
+          <button type="button" class="btn btn-sm btn-success m-b-xs mx-auto" style=" width: 100%;">
+            Paynow</button>
+        </div>
 
       </div>
 
