@@ -150,7 +150,7 @@
                                     <div class="col-md-3">
                                         <div class="card stat-widget" style="background-color: #d9ddfc;">
                                             <div class="card-body">
-                                                <h5 class="card-title">New Admissions</h5>
+                                                <h5 class="card-title">Total S.A.</h5>
                                                 <h2>120</h2>
                                                 <p>2023-24</p>
                                             </div>
@@ -194,11 +194,12 @@
 
                 </div>
 
+
+
                 <div class="row">
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
-
 
                                 <form class="row g-3">
 
@@ -243,19 +244,7 @@
                                     </div>
 
 
-
-                                    <div class="col-md-3">
-                                        <label class="form-label">Division</label>
-                                        <select class="form-select">
-                                            <option selected disabled value="">-select-</option>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-9">
+                                    <div class="col-md-12">
                                         <label class="form-label">Search</label>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
@@ -289,8 +278,8 @@
 
 
                                     <div class="col-12">
-                                        <button class="btn btn-primary" type="submit">LOAD DATA</button>
-                                        <button class="btn btn-primary" type="submit">EXPORT DATA</button>
+                                        <button class="btn btn-primary" type="submit">Search</button>
+
                                     </div>
 
                                 </form>
@@ -299,8 +288,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
 
 
@@ -314,24 +301,19 @@
                                             <tr>
                                                 <th scope="col">#</th>
                                                 <th scope="col">Acadmic Session</th>
-                                                <th scope="col">GR No.</th>
                                                 <th scope="col">Grade Applying</th>
-                                                <th scope="col">Grade</th>
                                                 <th scope="col">First Name</th>
                                                 <th scope="col">Middle Name</th>
                                                 <th scope="col">Last Name</th>
                                                 <th scope="col">Date of Birth</th>
                                                 <th scope="col">Created on</th>
-                                                <th scope="col">Status</th>
-                                                <th scope="col">Actions </th>
+                                                <th scope="col">Application Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">1</th>
+                                                <th scope="row"><input type="checkbox"></th>
                                                 <td>2022-2023</td>
-                                                <td>2856</td>
-                                                <td>4th</td>
                                                 <td>3rd</td>
                                                 <td>Abeer</td>
                                                 <td>Kumar</td>
@@ -339,16 +321,18 @@
                                                 <td>23/08/2016</td>
                                                 <td>23/06/2022 13:45:55</td>
                                                 <td><span class="badge rounded-pill bg-danger">Hold</span></td>
-                                                <td><button class="btn btn-primary mb-2"><a
-                                                            href="ConversionFormVerify.html">Verfiy</a></button></td>
-                                                <td><button class="btn btn-primary mb-2"><a href="#">View</a></button>
-                                                </td>
-                                                <td><button class="btn btn-primary mb-2"><a href="#">S.A.</a></button>
-                                                </td>
                                             </tr>
-
-
-
+                                            <tr>
+                                                <th scope="row"><input type="checkbox"></th>
+                                                <td>2022-2023</td>
+                                                <td>3rd</td>
+                                                <td>Abeer</td>
+                                                <td>Kumar</td>
+                                                <td>Mehra</td>
+                                                <td>23/08/2016</td>
+                                                <td>23/06/2022 13:45:55</td>
+                                                <td><span class="badge rounded-pill bg-danger">Hold</span></td>
+                                            </tr>
 
                                         </tbody>
 
@@ -358,6 +342,166 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body" style="overflow-x:auto;">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Acadmic Session</th>
+                                                <th scope="col">Grade Applying</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Middle Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Date of Birth</th>
+                                                <th scope="col">Created on</th>
+                                                <th scope="col">Application Status</th>
+                                                <th scope="col">SA Status</th>
+                                                <th scope="col">SA Remark</th>
+                                                <th scope="col">SA Paper</th>
+
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>2022-2023</td>
+                                                <td>3rd</td>
+                                                <td>Abeer</td>
+                                                <td>Kumar</td>
+                                                <td>Mehra</td>
+                                                <td>23/08/2016</td>
+                                                <td>23/06/2022 13:45:55</td>
+                                                <td><span class="badge rounded-pill bg-danger">Hold</span></td>
+                                                <td><span class="badge rounded-pill bg-success">Pass</span></td>
+                                                <td>
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <p><b>English:</b><br />Lorem ipsum dolor sit amet
+                                                                    consectetur adipisicing elit. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p><b>Math:</b><br />Lorem ipsum dolor sit amet
+                                                                    consectetur adipisicing elit. </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p><b>Hindi:</b><br />Lorem ipsum dolor sit amet
+                                                                    consectetur adipisicing elit. </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="cursor:pointer"><span
+                                                        class="badge rounded-pill bg-info">View</span></td>
+
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <form class="row g-3">
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Subject</label>
+                                        <select class="form-select">
+                                            <option selected disabled value="">-select-</option>
+                                            <option>English</option>
+                                            <option>Math</option>
+                                            <option>Hindi</option>
+                                            <option>Science</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label">Remarks</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Paper Link</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Subject</label>
+                                        <select class="form-select">
+                                            <option selected disabled value="">-select-</option>
+                                            <option>English</option>
+                                            <option>Math</option>
+                                            <option>Hindi</option>
+                                            <option>Science</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label">Remarks</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Paper Link</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Subject</label>
+                                        <select class="form-select">
+                                            <option selected disabled value="">-select-</option>
+                                            <option>English</option>
+                                            <option>Math</option>
+                                            <option>Hindi</option>
+                                            <option>Science</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="form-label">Remarks</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <label class="form-label">Paper Link</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
 
 
 
